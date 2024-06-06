@@ -137,25 +137,65 @@ const videos = document.querySelector(".swiper");
 
 if (videos) {
 
-  const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    slidesPerView: 1, // Display 3 slides per view
-    breakpoints: {
-      640: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 3,
-      },
+  const swiper = new Swiper(".swiper",{
+    direction: "horizontal",
+    effect: 'coverflow',
+    coverflowEffect: {
+        rotate: 50,
+        slideShadows: false,
     },
+    loop:true,
+    initialSlide: 0,
     autoplay: {
-      delay: 5000, // Autoplay with a delay of 10 seconds (10000ms)
+        delay: 1e4,
+        disableOnInteraction: !1
     },
-    spaceBetween: 20, // Optional: space between slides in pixels
+  
+    breakpoints: {
+        300: {
+            slidesPerView: 1,
+            spaceBetween: 0
+        },
+        700: {
+            slidesPerView: 2,
+            spaceBetween: 30
+        },
+        1000: {
+            slidesPerView: 3,
+            spaceBetween: 10
+        }
+    }
+});
+  // const swiper = new Swiper('.swiper', {
+  //   effect: 'coverflow',
+  //   coverflowEffect: {
+  //     rotate: 50,
+  //     slideShadows: false,
+  //   },
+  
+  //   // Optional parameters
+  //   direction: 'horizontal',
+  //   loop: true,
+  //   centeredSlides: false,
+  //   slidesPerView: 1, // Display 3 slides per view
+  //   breakpoints: {
+  //     640: {
+  //       slidesPerView: 2,
+  //       centeredSlides: true,
+  //     },
+  //     1024: {
+  //       slidesPerView: 3,
+  //       centeredSlides: true,
 
-  });
+  //     },
+  //   },
+  //   start:1,
+  //   // autoplay: {
+  //   //   delay: 5000, // Autoplay with a delay of 10 seconds (10000ms)
+  //   // },
+  //   spaceBetween: 20, // Optional: space between slides in pixels
+
+  // });
 }
 
 
@@ -312,3 +352,52 @@ if (searchInput) {
     });
   });
 }
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const glowText = document.getElementById('glow-text');
+
+  document.addEventListener('mousemove', function (e) {
+    const x = (e.clientX / window.innerWidth - 0.5) * 20;
+    const y = (e.clientY / window.innerHeight - 0.5) * 20;
+
+    glowText.style.textShadow = `
+          ${x}px ${y}px 5px #800080,
+          ${x * 1.5}px ${y * 1.5}px 10px #800080,
+          ${x * 2}px ${y * 2}px 15px #800080,
+          ${x * 2.5}px ${y * 2.5}px 20px #e600e6,
+          ${x * 3}px ${y * 3}px 30px #e600e6,
+          ${x * 3.5}px ${y * 3.5}px 40px #e600e6,
+          ${x * 4}px ${y * 4}px 50px #e600e6,
+          ${x * 4.5}px ${y * 4.5}px 60px #e600e6
+      `;
+  });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('contact-form');
+  const recipients = ['services@maliks.com', 'services1@maliks.com', 'services4@maliks.com', 'services5@maliks.com'];
+
+  form.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const fullName = document.getElementById('full-name').value;
+      const branch = document.getElementById('branch').value;
+      const title = document.getElementById('title').value;
+      const message = document.getElementById('message').value;
+
+      const subject = `Message from ${fullName}`;
+      const body = `Full Name: ${fullName}\nBranch: ${branch}\nTitle: ${title}\nMessage: ${message}`;
+
+      const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${recipients.join(',')}`
+                      + `&su=${encodeURIComponent(subject)}`
+                      + `&body=${encodeURIComponent(body)}`;
+
+                      
+
+      window.open(gmailLink, '_blank');
+
+      form.reset();
+  });
+});

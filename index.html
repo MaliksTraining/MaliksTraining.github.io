@@ -78,7 +78,9 @@
 
             <div class="home-text">
 
-                <b>Maliks</b>
+                    <div class="home-text">
+                <b id="glow-text">Maliks</b>
+            </div>
 
                 <p id="animatedText">Embrace Growth,<br>Expand Horizons: <br>Together,<br><span
                         style="text-wrap: nowrap;overflow-wrap: break-word;">We <span id="dynamicWord">
@@ -504,46 +506,32 @@
             <span>Contact us</span>
             <div class="contact-all">
 
-
-                <div class="contact-left">
-
+                <form class="contact-left" id="contact-form">
 
                     <div class="contact-left-field">
-
                         <p>Full Name</p>
-                        <input type="text">
-
-
+                        <input type="text" id="full-name" name="full-name" required>
                     </div>
 
 
                     <div class="contact-left-field">
-
                         <p>Branch</p>
-                        <input type="text">
-
-
+                        <input type="text" id="branch" name="branch" required>
                     </div>
 
                     <div class="contact-left-field">
-
                         <p>Title</p>
-                        <input type="text">
-
-
+                        <input type="text" id="title" name="title" required>
                     </div>
 
                     <div class="contact-left-field">
-
                         <p>Message</p>
-                        <input type="text">
-
-
+                        <input type="text" id="message" name="message" required>
                     </div>
 
-                    <button class="contact-left-send --button">Send</button>
+                    <button type="submit" class="contact-left-send --button">Send</button>
 
-                </div>
+                </form>
 
                 <div class="contact-right">
                     <div class="contact-right-info">

@@ -245,6 +245,43 @@ header .header-right a {
 }
 
 
+.home-text b {
+  color: #fff;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  transition: text-shadow 0.2s;
+}
+
+@keyframes crazyGlow {
+
+  0%,
+  100% {
+    text-shadow:
+      0 0 10px #800080,
+      0 0 20px #800080,
+      0 0 30px #800080,
+      0 0 40px #e600e6,
+      0 0 70px #e600e6,
+      0 0 80px #e600e6,
+      0 0 100px #e600e6,
+      0 0 150px #e600e6;
+  }
+
+  50% {
+    text-shadow:
+      0 0 20px #ff00ff,
+      0 0 30px #ff00ff,
+      0 0 40px #ff00ff,
+      0 0 50px #ff69b4,
+      0 0 80px #ff69b4,
+      0 0 90px #ff69b4,
+      0 0 100px #ff69b4,
+      0 0 150px #ff69b4;
+  }
+}
 
 .home article {
   padding-inline: 0;
@@ -594,7 +631,7 @@ header .header-right a {
 
 }
 
-.team article a:hover{
+.team article a:hover {
 
   color: white;
   transform: scale(1.2);
@@ -651,7 +688,7 @@ header .header-right a {
 }
 
 .video {
-  padding-inline: 0;
+  padding-inline: 20px;
 }
 
 .video article {
@@ -686,10 +723,9 @@ header .header-right a {
 }
 
 .video article .video-slideShow .video-slideShow-cover {
-
   gap: 20px;
   align-items: stretch;
-  padding: 20px;
+  padding-block: 20px;
 
 }
 
@@ -704,6 +740,7 @@ header .header-right a {
   gap: 20px;
   transition: all .3s;
   height: 100%;
+  align-items: center;
 
 }
 
@@ -713,7 +750,6 @@ header .header-right a {
   border-radius: 20px;
   transform: scale(1.04) rotate(1deg);
 
-
 }
 
 .video article .video-slideShow .video-slideShow-cover .video-slideShow-cover-item .video-slideshow-cover-item-text {
@@ -722,7 +758,6 @@ header .header-right a {
   flex-direction: column;
   gap: 20px;
   height: 100%;
-
 
 }
 
@@ -1420,7 +1455,7 @@ footer a {
 .competition article .competition-body {
 
   display: flex;
-  gap: 100px;
+  gap: 130px;
   width: 100%;
   justify-content: center;
   flex-wrap: wrap;
