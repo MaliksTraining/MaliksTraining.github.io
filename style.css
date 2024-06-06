@@ -139,15 +139,21 @@ header article {
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 
 }
 
 header .header-left {
   display: flex;
   align-items: center;
-  gap: 10px;
   width: 100%;
+}
+
+header .header-left a {
+
+  display: flex;
+  gap: 10px;
+
 }
 
 header .header-left img {
@@ -176,20 +182,20 @@ header .header-left .header-left-name {
   align-items: center;
 }
 
-header .header-left .header-left-name a {
+header .header-left .header-left-name {
 
   display: flex;
   cursor: pointer;
 
 }
 
-header .header-left a p {
+header .header-left p {
   color: white;
   font-weight: bold;
   font-size: 1.5rem;
 }
 
-header .header-left a b {
+header .header-left b {
   background: linear-gradient(to right, #f47c43, #742b8c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -578,6 +584,23 @@ header .header-right a {
 
 }
 
+.team article a {
+
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: .4s ease-in-out;
+
+
+}
+
+.team article a:hover{
+
+  color: white;
+  transform: scale(1.2);
+
+}
+
 
 
 .team .team-card {
@@ -898,6 +921,8 @@ video article .dots {
 
 }
 
+
+
 #animatedText {
 
   font-size: 2.5rem;
@@ -1202,6 +1227,17 @@ footer a {
   width: 100%;
 }
 
+.gd-page article .gd-page-search input:focus {
+
+  outline: none;
+  border-color: #66afe9;
+  box-shadow: 0 0 10px #c677ff;
+  font-size: 18px;
+  border-radius: 25px;
+  padding: 5px 5px;
+  padding-inline: 15px;
+}
+
 .gd-page article .gd-page-body {
 
   display: flex;
@@ -1259,7 +1295,7 @@ footer a {
 .gd-page article .gd-page-body .gd-page-body-title-icon img:hover {
 
   width: 70px;
- 
+
 
 }
 
