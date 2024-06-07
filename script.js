@@ -355,8 +355,9 @@ if (searchInput) {
 
 
 document.addEventListener('DOMContentLoaded', function () {
+  
   const glowText = document.getElementById('glow-text');
-
+  if(glowText){
   document.addEventListener('mousemove', function (e) {
     const x = (e.clientX / window.innerWidth - 0.5) * 20;
     const y = (e.clientY / window.innerHeight - 0.5) * 20;
@@ -372,13 +373,13 @@ document.addEventListener('DOMContentLoaded', function () {
           ${x * 4.5}px ${y * 4.5}px 60px #e600e6
       `;
   });
-});
+}});
 
 
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('contact-form');
   const recipients = ['services@maliks.com', 'services1@maliks.com', 'services4@maliks.com', 'services5@maliks.com'];
-
+  if(form){
   form.addEventListener('submit', function(event) {
       event.preventDefault();
 
@@ -400,4 +401,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
       form.reset();
   });
+}});
+
+
+document.getElementById('chatForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const prompt = document.getElementById('prompt').value;
+  const response = await fetch('123', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ prompt })
+  });
+  const data = await response.json();
+  document.getElementById('chatResult').innerText = data;
 });

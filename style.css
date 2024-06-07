@@ -205,7 +205,7 @@ header .header-left b {
 
 header .header-right {
   display: none;
-  gap: 100px;
+  gap: 50px;
   background-color: rgba(255, 255, 255, 0.2);
   padding: 15px;
   padding-inline: 70px;
@@ -1462,6 +1462,101 @@ footer a {
 
 }
 
+ul {
+  list-style: none;
+}
+
+.example-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.example-2 .icon-content {
+  margin: 0 10px;
+  position: relative;
+}
+
+.example-2 .icon-content .tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 15px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.example-2 .icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: 45px;
+}
+
+.example-2 .icon-content a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 20%;
+  color: #4d4d4d;
+  transition: all 0.3s ease-in-out;
+}
+
+.example-2 .icon-content a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.example-2 .icon-content a svg {
+  position: relative;
+  z-index: 1;
+  fill: white;
+  width: 25px;
+  height: 25px;
+}
+
+.example-2 .icon-content a:hover svg {
+  fill: #e600e6;
+}
+
+
+.example-2 .icon-content a:hover {
+  color: white;
+
+}
+
+.example-2 .icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+
+
+.example-2 .icon-content a:hover .filled {
+  height: 100%;
+}
+
+
+.example-2 .icon-content a[data-social="spotify"]~.tooltip {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+
 .confetti {
   max-width: 100%;
   display: block;
@@ -1691,6 +1786,69 @@ footer a {
 
 }
 
+.body {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 150px;
+
+}
+
+.body article {
+
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+}
+
+.body article .title {
+
+  font-size: 1rem;
+  color: white;
+  border-left: 2px solid white;
+  padding-left: 20px;
+
+}
+
+
+.body article b {
+
+  font-size: 4rem;
+  color: white;
+  font-weight: 400;
+
+}
+
+.body article label {
+
+  font-size: 1.5rem;
+  color: white;
+
+}
+
+.body article .field {
+
+  display: flex;
+
+}
+
+.body article .field input {
+
+  width: 170px;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 0.9em;
+  caret-color: rgb(255, 81, 0);
+
+}
+
+
+
 
 
 
@@ -1713,6 +1871,7 @@ footer a {
 
   header .header-right {
     display: flex;
+    align-items: center;
   }
 
   header article {
