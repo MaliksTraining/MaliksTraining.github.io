@@ -158,7 +158,7 @@ header .header-left a {
 
 header .header-left img {
   width: 100%;
-  max-width: 50px;
+  max-width: 40px;
   animation: jumpLogo 2s ease-in-out infinite;
 
 }
@@ -192,7 +192,7 @@ header .header-left .header-left-name {
 header .header-left p {
   color: white;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 header .header-left b {
@@ -214,10 +214,121 @@ header .header-right {
 }
 
 header .header-right a {
+
   color: white;
   font-size: 1.2rem;
   font-weight: 300;
   text-decoration: none;
+  transition: 0.4s ease-in-out;
+
+}
+
+header .header-right a:hover {
+
+  color: #c677ff;
+  font-weight: bold;
+
+}
+
+.burger{
+  width: 30px;
+  background-color: transparent;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  cursor: pointer;
+}
+.burger span{
+  width: 100%;
+  height: 5px;
+  content: "";
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.mobileheader{
+  position: fixed;
+  width: 100VW;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.2);
+  top: 0;
+  left: 0;
+  z-index: 99999999999999999999999999999999999999999999999999;
+  display: none;
+}
+
+.mobileheader article{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+  max-width: 300px;
+  height: 100vh;
+  overflow-y: auto;
+  align-items: center;
+}
+
+.mobileheader-close{
+  width: 30px;
+  background-color: transparent;
+  outline: none;
+  border:none;
+  margin-left: auto;
+  cursor: pointer;
+}
+.mobileheader-close svg{
+  width: 100%;
+  fill:#000;
+}
+
+.mobileheader-logo{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.mobileheader-logo p
+{
+  color: #000;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.mobileheader-logo b{
+  background: linear-gradient(to right, #f47c43, #742b8c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.mobileheader-content{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+.mobileheader-content a{
+  padding-block: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  color:#000;
+  transition: all .3s ease-in-out;
+}
+
+.mobileheader-content a:hover{
+  color:#742b8c;
+  font-weight: bold;
 }
 
 ._scroll header {
@@ -230,6 +341,14 @@ header .header-right a {
   background-color: transparent;
 }
 
+
+.openmenu{
+  overflow-y: hidden;
+}
+
+.openmenu .mobileheader{
+  display: block;
+}
 
 #dynamicWord {
   height: 50px;
@@ -1851,10 +1970,18 @@ ul {
 
 
 
-
-
 @media only screen and (min-width: 1200px) {
 
+  .burger{
+    display: none;
+  }
+  .openmenu{
+    overflow-y: visible!important;
+  }
+  
+  .openmenu .mobileheader{
+    display: none!important;
+  }
   .competition article .title span {
 
     font-size: 2rem;

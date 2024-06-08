@@ -403,17 +403,61 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 }});
 
+var chartform=document.getElementById('chatForm');
 
-document.getElementById('chatForm').addEventListener('submit', async (e) => {
-  e.preventDefault();
-  const prompt = document.getElementById('prompt').value;
-  const response = await fetch('123', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({ prompt })
+if(chartform){
+  document.getElementById('chatForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const prompt = document.getElementById('prompt').value;
+    const response = await fetch('123', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ prompt })
+    });
+    const data = await response.json();
+    document.getElementById('chatResult').innerText = data;
   });
-  const data = await response.json();
-  document.getElementById('chatResult').innerText = data;
+  
+}
+
+
+
+var burgerButton=document.querySelector(".burger");
+var closeButton =document.querySelector(".mobileheader-close");
+var mobileHeader = document.querySelector('.mobileheader');
+var mobileHeaderArticle = document.querySelector('.mobileheader article');
+const mobileHeaderLinks = document.querySelectorAll('.mobileheader-content a');
+
+if(burgerButton){
+  burgerButton.addEventListener("click",function(){
+    document.querySelector("html").classList.toggle("openmenu");
+  })
+} 
+
+if(mobileHeader){
+  function removeClass() {
+    document.querySelector("html").classList.remove("openmenu");
+}
+
+// Add event listener for the close button
+closeButton.addEventListener('click', removeClass);
+
+// Add event listener to the document
+document.addEventListener('click', function(event) {
+    // Check if the click is outside the article element
+    if (!mobileHeaderArticle.contains(event.target) && !burgerButton.contains(event.target)) {
+        removeClass();
+    }
 });
+// Add event listener to each link to close the menu when clicked
+mobileHeaderLinks.forEach(link => {
+  link.addEventListener('click', removeClass);
+});
+
+// Prevent closing when clicking inside the article element
+mobileHeaderArticle.addEventListener('click', function(event) {
+    event.stopPropagation();
+});
+}
