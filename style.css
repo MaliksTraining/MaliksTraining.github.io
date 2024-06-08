@@ -2140,4 +2140,22 @@ ul {
     width: 60px;
   }
 
+  header .header-left p {
+    font-size: 1.5rem;
+  }
+
+  header .header-left b{
+
+    font-size: 1.5rem;
+
+
+  }
+
+  header .header-left img{
+
+  max-width: 50px;
+    
+
+  }
+
 }

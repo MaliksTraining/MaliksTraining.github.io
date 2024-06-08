@@ -436,7 +436,7 @@ if(burgerButton){
   })
 } 
 
-if(mobileHeader){
+if(mobileHeader){``
   function removeClass() {
     document.querySelector("html").classList.remove("openmenu");
 }
