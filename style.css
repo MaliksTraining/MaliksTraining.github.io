@@ -209,7 +209,7 @@ header .header-right {
   background-color: rgba(255, 255, 255, 0.2);
   padding: 15px;
   padding-inline: 70px;
-  border-radius: 30px;
+  border-radius: 80px;
   transition: all .3s ease-in-out;
 }
 
@@ -1831,6 +1831,7 @@ ul {
 
   color: rgba(227, 222, 193, 0.64);
   font-weight: 500;
+  font-size: 1.2rem;
 
 }
 
@@ -1846,6 +1847,15 @@ ul {
   font-weight: 500;
   color: white;
   font-size: 1.5rem;
+
+}
+
+.competition article .competition-body .competition-body-card .competition-body-card-inside .competition-body-card-inside-footer p{
+
+  font-weight: 400;
+  color: rgba(227, 222, 193, 0.64);
+  font-size: 1rem;
+  text-align: center;
 
 }
 
