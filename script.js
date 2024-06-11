@@ -137,42 +137,42 @@ const videos = document.querySelector(".swiper");
 
 if (videos) {
 
-  const swiper = new Swiper(".swiper",{
+  const swiper = new Swiper(".swiper", {
     direction: "horizontal",
     effect: 'coverflow',
     coverflowEffect: {
-        rotate: 50,
-        slideShadows: false,
+      rotate: 50,
+      slideShadows: false,
     },
-    loop:true,
+    loop: true,
     initialSlide: 0,
     autoplay: {
-        delay: 1e4,
-        disableOnInteraction: !1
+      delay: 1e4,
+      disableOnInteraction: !1
     },
-  
+
     breakpoints: {
-        300: {
-            slidesPerView: 1,
-            spaceBetween: 0
-        },
-        700: {
-            slidesPerView: 2,
-            spaceBetween: 30
-        },
-        1000: {
-            slidesPerView: 3,
-            spaceBetween: 10
-        }
+      300: {
+        slidesPerView: 1,
+        spaceBetween: 0
+      },
+      700: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+      1000: {
+        slidesPerView: 3,
+        spaceBetween: 10
+      }
     }
-});
+  });
   // const swiper = new Swiper('.swiper', {
   //   effect: 'coverflow',
   //   coverflowEffect: {
   //     rotate: 50,
   //     slideShadows: false,
   //   },
-  
+
   //   // Optional parameters
   //   direction: 'horizontal',
   //   loop: true,
@@ -355,14 +355,14 @@ if (searchInput) {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  
-  const glowText = document.getElementById('glow-text');
-  if(glowText){
-  document.addEventListener('mousemove', function (e) {
-    const x = (e.clientX / window.innerWidth - 0.5) * 20;
-    const y = (e.clientY / window.innerHeight - 0.5) * 20;
 
-    glowText.style.textShadow = `
+  const glowText = document.getElementById('glow-text');
+  if (glowText) {
+    document.addEventListener('mousemove', function (e) {
+      const x = (e.clientX / window.innerWidth - 0.5) * 20;
+      const y = (e.clientY / window.innerHeight - 0.5) * 20;
+
+      glowText.style.textShadow = `
           ${x}px ${y}px 5px #800080,
           ${x * 1.5}px ${y * 1.5}px 10px #800080,
           ${x * 2}px ${y * 2}px 15px #800080,
@@ -372,15 +372,16 @@ document.addEventListener('DOMContentLoaded', function () {
           ${x * 4}px ${y * 4}px 50px #e600e6,
           ${x * 4.5}px ${y * 4.5}px 60px #e600e6
       `;
-  });
-}});
+    });
+  }
+});
 
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById('contact-form');
   const recipients = ['services@maliks.com', 'services1@maliks.com', 'services4@maliks.com', 'services5@maliks.com'];
-  if(form){
-  form.addEventListener('submit', function(event) {
+  if (form) {
+    form.addEventListener('submit', function (event) {
       event.preventDefault();
 
       const fullName = document.getElementById('full-name').value;
@@ -392,20 +393,21 @@ document.addEventListener('DOMContentLoaded', function() {
       const body = `Full Name: ${fullName}\nBranch: ${branch}\nTitle: ${title}\nMessage: ${message}`;
 
       const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${recipients.join(',')}`
-                      + `&su=${encodeURIComponent(subject)}`
-                      + `&body=${encodeURIComponent(body)}`;
+        + `&su=${encodeURIComponent(subject)}`
+        + `&body=${encodeURIComponent(body)}`;
 
-                      
+
 
       window.open(gmailLink, '_blank');
 
       form.reset();
-  });
-}});
+    });
+  }
+});
 
-var chartform=document.getElementById('chatForm');
+var chartform = document.getElementById('chatForm');
 
-if(chartform){
+if (chartform) {
   document.getElementById('chatForm').addEventListener('submit', async (e) => {
     e.preventDefault();
     const prompt = document.getElementById('prompt').value;
@@ -419,45 +421,90 @@ if(chartform){
     const data = await response.json();
     document.getElementById('chatResult').innerText = data;
   });
-  
+
 }
 
 
 
-var burgerButton=document.querySelector(".burger");
-var closeButton =document.querySelector(".mobileheader-close");
+var burgerButton = document.querySelector(".burger");
+var closeButton = document.querySelector(".mobileheader-close");
 var mobileHeader = document.querySelector('.mobileheader');
 var mobileHeaderArticle = document.querySelector('.mobileheader article');
 const mobileHeaderLinks = document.querySelectorAll('.mobileheader-content a');
 
-if(burgerButton){
-  burgerButton.addEventListener("click",function(){
+if (burgerButton) {
+  burgerButton.addEventListener("click", function () {
     document.querySelector("html").classList.toggle("openmenu");
   })
-} 
-
-if(mobileHeader){``
-  function removeClass() {
-    document.querySelector("html").classList.remove("openmenu");
 }
 
-// Add event listener for the close button
-closeButton.addEventListener('click', removeClass);
+if (mobileHeader) {
+  ``
+  function removeClass() {
+    document.querySelector("html").classList.remove("openmenu");
+  }
 
-// Add event listener to the document
-document.addEventListener('click', function(event) {
+  // Add event listener for the close button
+  closeButton.addEventListener('click', removeClass);
+
+  // Add event listener to the document
+  document.addEventListener('click', function (event) {
     // Check if the click is outside the article element
     if (!mobileHeaderArticle.contains(event.target) && !burgerButton.contains(event.target)) {
-        removeClass();
+      removeClass();
     }
-});
-// Add event listener to each link to close the menu when clicked
-mobileHeaderLinks.forEach(link => {
-  link.addEventListener('click', removeClass);
-});
+  });
+  // Add event listener to each link to close the menu when clicked
+  mobileHeaderLinks.forEach(link => {
+    link.addEventListener('click', removeClass);
+  });
 
-// Prevent closing when clicking inside the article element
-mobileHeaderArticle.addEventListener('click', function(event) {
+  // Prevent closing when clicking inside the article element
+  mobileHeaderArticle.addEventListener('click', function (event) {
     event.stopPropagation();
-});
+  });
+}
+
+var fadersLeft = document.querySelectorAll(".fade-left");
+var fadersRight = document.querySelectorAll(".fade-right");
+var faderIn = document.querySelectorAll(".fadein");
+var fadeCount = document.querySelectorAll(".fadecount");
+var interval = 1000;
+
+var appearOptions = {
+  threshold: 0,
+  rootMargin: "0px 0px -100px 0px"
+};
+
+var appearScroll = new IntersectionObserver(function (entries) {
+  entries.forEach(function (entry) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("_appear");
+      appearScroll.unobserve(entry.target);
+    }
+  });
+}, appearOptions);
+
+if (fadersLeft) {
+  fadersLeft.forEach(function (element) {
+    appearScroll.observe(element);
+  });
+}
+
+if (fadersRight) {
+  fadersRight.forEach(function (element) {
+    appearScroll.observe(element);
+  });
+}
+
+if (faderIn) {
+  faderIn.forEach(function (element) {
+    appearScroll.observe(element);
+  });
+}
+
+if (fadeCount) {
+  fadeCount.forEach(function (element) {
+    appearScroll.observe(element);
+  });
 }

@@ -230,7 +230,7 @@ header .header-right a:hover {
 
 }
 
-.burger{
+.burger {
   width: 30px;
   background-color: transparent;
   outline: none;
@@ -241,7 +241,8 @@ header .header-right a:hover {
   gap: 5px;
   cursor: pointer;
 }
-.burger span{
+
+.burger span {
   width: 100%;
   height: 5px;
   content: "";
@@ -249,7 +250,7 @@ header .header-right a:hover {
   border-radius: 5px;
 }
 
-.mobileheader{
+.mobileheader {
   position: fixed;
   width: 100VW;
   height: 100vh;
@@ -260,7 +261,7 @@ header .header-right a:hover {
   display: none;
 }
 
-.mobileheader article{
+.mobileheader article {
   width: 100%;
   height: 100%;
   display: flex;
@@ -274,33 +275,35 @@ header .header-right a:hover {
   align-items: center;
 }
 
-.mobileheader-close{
+.mobileheader-close {
   width: 30px;
   background-color: transparent;
   outline: none;
-  border:none;
+  border: none;
   margin-left: auto;
   cursor: pointer;
 }
-.mobileheader-close svg{
+
+.mobileheader-close svg {
   width: 100%;
-  fill:#000;
+  fill: #000;
 }
 
-.mobileheader-logo{
+.mobileheader-logo {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 
 }
-.mobileheader-logo p
-{
+
+.mobileheader-logo p {
   color: #000;
-    font-weight: bold;
-    font-size: 1.2rem;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
-.mobileheader-logo b{
+
+.mobileheader-logo b {
   background: linear-gradient(to right, #f47c43, #742b8c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -308,26 +311,26 @@ header .header-right a:hover {
   font-size: 1.2rem;
 }
 
-.mobileheader-content{
+.mobileheader-content {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  
+
 }
 
-.mobileheader-content a{
+.mobileheader-content a {
   padding-block: 20px;
   width: 100%;
   text-align: center;
   font-size: 1.2rem;
-  color:#000;
+  color: #000;
   transition: all .3s ease-in-out;
 }
 
-.mobileheader-content a:hover{
-  color:#742b8c;
+.mobileheader-content a:hover {
+  color: #742b8c;
   font-weight: bold;
 }
 
@@ -342,11 +345,11 @@ header .header-right a:hover {
 }
 
 
-.openmenu{
+.openmenu {
   overflow-y: hidden;
 }
 
-.openmenu .mobileheader{
+.openmenu .mobileheader {
   display: block;
 }
 
@@ -1814,7 +1817,7 @@ ul {
 
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -1850,7 +1853,7 @@ ul {
 
 }
 
-.competition article .competition-body .competition-body-card .competition-body-card-inside .competition-body-card-inside-footer p{
+.competition article .competition-body .competition-body-card .competition-body-card-inside .competition-body-card-inside-footer p {
 
   font-weight: 400;
   color: rgba(227, 222, 193, 0.64);
@@ -1982,16 +1985,18 @@ ul {
 
 @media only screen and (min-width: 1200px) {
 
-  .burger{
+  .burger {
     display: none;
   }
-  .openmenu{
-    overflow-y: visible!important;
+
+  .openmenu {
+    overflow-y: visible !important;
   }
-  
-  .openmenu .mobileheader{
-    display: none!important;
+
+  .openmenu .mobileheader {
+    display: none !important;
   }
+
   .competition article .title span {
 
     font-size: 2rem;
@@ -2031,6 +2036,7 @@ ul {
   .home article {
 
     gap: 40px;
+    margin-top: 60px;
   }
 
   .home article .home-text b {
@@ -2154,18 +2160,57 @@ ul {
     font-size: 1.5rem;
   }
 
-  header .header-left b{
+  header .header-left b {
 
     font-size: 1.5rem;
 
 
   }
 
-  header .header-left img{
+  header .header-left img {
 
-  max-width: 50px;
-    
+    max-width: 50px;
+
 
   }
 
+}
+
+.fade-left,
+.fade-right,
+.fadein,
+.fadeout {
+  opacity: 0;
+}
+
+.fade-left._appear,
+.fade-right._appear,
+.fadein._appear,
+.fadeout._appear {
+  transform: none;
+  opacity: 1;
+  transition: opacity 800ms ease-in-out, transform 800ms ease-in-out;
+}
+
+.fade-left._appear:nth-child(2n+1),
+.fade-right._appear:nth-child(2n+1),
+.fadein._appear:nth-child(2n+1),
+.fadeout._appear:nth-child(2n+1) {
+  transition-delay: 40ms;
+}
+
+.fade-left {
+  transform: translateX(-100%);
+}
+
+.fade-right {
+  transform: translateX(100%);
+}
+
+.fadein {
+  transform: translateY(50px);
+}
+
+.fadeout {
+  transform: translateY(-50px);
 }
