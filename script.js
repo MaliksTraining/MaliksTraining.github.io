@@ -508,3 +508,4 @@ if (fadeCount) {
     appearScroll.observe(element);
   });
 }
+
