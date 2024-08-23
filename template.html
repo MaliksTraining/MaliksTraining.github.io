@@ -1,0 +1,934 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maliks Training Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/Logos/logo 2.svg" type="image/x-icon">
+
+</head>
+
+<body>
+    <div id="cursor">
+        <div class="cursor__circle"></div>
+    </div>
+
+    <header>
+        <article>
+            <div class="header-left fade-left">
+                <a href="index.html">
+                    <img src="/Logos/logo 2.svg" alt="Logo">
+                    <div class="header-left-name">
+
+                        <p>MaliksTraining</p><b>.io</b>
+
+                    </div>
+                </a>
+            </div>
+            
+            <div class="header-right fade-right">
+
+                <ul class="example-2">
+                    <li class="icon-content">
+                        <a target="_blank" href="https://chatgpt.com/g/g-a0vm07JeH-maliks-gpt" aria-label="Spotify"
+                            data-social="spotify">
+                            <div class="filled"></div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40.55" xml:space="preserve">
+                                <path
+                                    d="M22.12 40.55c-1.71 0-3.32-.39-4.83-1.2a10 10 0 0 1-2.71-2.12c-.06-.06-.11-.07-.18-.06-3.04.57-5.81-.07-8.27-1.93-1.31-.99-2.3-2.26-3.01-3.74-.52-1.08-.83-2.22-.95-3.4-.13-1.36.02-2.7.43-4.01.03-.09.03-.15-.04-.22C1.62 22.8.92 21.58.49 20.22a9.8 9.8 0 0 1-.47-2.69c-.07-1.69.26-3.31.99-4.83.89-1.86 2.22-3.34 4-4.4.94-.56 1.94-.95 3-1.18.11-.02.14-.07.18-.17.51-1.5 1.32-2.81 2.44-3.93C12.05 1.6 13.75.66 15.71.25c2.51-.53 4.91-.19 7.17 1.05.97.53 1.81 1.22 2.56 2.03.06.06.11.08.19.06.95-.19 1.91-.25 2.88-.16 2.14.19 4.04.97 5.69 2.33 1.16.97 2.06 2.14 2.71 3.51.48 1 .78 2.05.92 3.14.11.89.11 1.79-.04 2.68-.1.55-.24 1.09-.37 1.63-.02.08 0 .13.05.18.84.97 1.5 2.05 1.93 3.25.37 1.01.57 2.04.61 3.12.06 1.69-.26 3.3-1 4.82-.96 2-2.41 3.54-4.37 4.6-.83.45-1.71.77-2.62.97-.1.02-.14.06-.17.15a10 10 0 0 1-1.88 3.33c-1.2 1.42-2.69 2.43-4.44 3.05-.96.32-2.12.57-3.41.56m2.27-15.59c-.29.17-.57.32-.84.48-2.98 1.72-5.97 3.45-8.95 5.17-.49.28-.97.28-1.45 0-2.46-1.42-4.91-2.84-7.37-4.26-.29-.17-.57-.33-.87-.5-.01.03-.02.05-.02.06-.12.78-.13 1.57-.01 2.35.27 1.73 1.04 3.21 2.32 4.4 1.59 1.47 3.48 2.14 5.64 2.03 1.19-.06 2.3-.4 3.33-.99 2.7-1.55 5.39-3.11 8.08-4.66.1-.06.13-.12.13-.24v-2.38c.01-.47.01-.95.01-1.46m-10.64-3.23v-2.89c0-2.79.01-5.58.01-8.37 0-.55.2-.99.68-1.27 2.41-1.4 4.82-2.79 7.24-4.18.35-.2.69-.4 1.05-.61-.1-.08-.2-.16-.29-.23-1.43-1.06-3.04-1.57-4.82-1.52-.96.03-1.88.25-2.76.62-2.74 1.16-4.57 3.94-4.57 6.97v9.27c0 .14.05.22.17.29.77.44 1.53.88 2.3 1.32.32.21.64.4.99.6m1.86-6.14c.05-.03.08-.04.11-.06 1.59-.92 3.17-1.83 4.76-2.75 1.65-.95 3.29-1.9 4.94-2.85.48-.28.95-.27 1.43 0 2.71 1.57 5.43 3.13 8.14 4.7.03.02.07.04.11.05.01-.02.02-.03.02-.04.19-1.25.1-2.48-.31-3.67-.55-1.59-1.51-2.87-2.9-3.81-1.42-.97-3-1.41-4.73-1.31-.68.04-1.34.17-1.99.39-.67.22-1.28.57-1.89.92-2.48 1.44-4.96 2.87-7.45 4.3-.16.09-.24.18-.23.38.01 1.19.01 2.38.01 3.57-.02.05-.02.1-.02.18m6.26-1.45.59.34c3.05 1.76 6.11 3.53 9.16 5.29.51.3.76.72.76 1.31v9.49c.07-.02.11-.03.15-.05 1.23-.49 2.28-1.24 3.1-2.28 1.51-1.91 2.03-4.06 1.51-6.44-.47-2.13-1.67-3.77-3.55-4.88-2.7-1.59-5.42-3.13-8.12-4.7-.1-.06-.18-.05-.28 0-.48.29-.97.56-1.46.84-.61.35-1.22.71-1.86 1.08m4.38 4.68v11.29c0 .55-.23.97-.72 1.25-.2.11-.4.23-.6.34-2.16 1.25-4.31 2.49-6.47 3.74-.39.23-.78.45-1.18.68.02.02.02.03.03.04 1.74 1.38 3.71 1.94 5.92 1.63 1.3-.18 2.47-.68 3.5-1.49 1.93-1.52 2.94-3.51 2.97-5.96.04-3.12.01-6.24.01-9.36 0-.12-.04-.2-.15-.26-.63-.36-1.27-.73-1.9-1.09-.46-.25-.92-.52-1.41-.81M7.63 9.99c-.07.02-.11.03-.15.05-1.56.63-2.8 1.65-3.68 3.09-1.02 1.68-1.35 3.51-.97 5.44.37 1.85 1.3 3.37 2.8 4.52.47.36 1 .66 1.52.96 2.45 1.42 4.9 2.84 7.36 4.26.13.07.22.08.34 0 .88-.52 1.77-1.02 2.65-1.53.21-.12.42-.24.64-.38-.33-.19-.64-.37-.96-.55-2.92-1.69-5.84-3.38-8.76-5.05-.54-.31-.8-.75-.79-1.38.01-3.08 0-6.16 0-9.23zm16.76 10.29v-2.39c0-.11-.03-.17-.13-.22l-4.11-2.37c-.11-.07-.19-.06-.3 0-1.37.8-2.74 1.59-4.11 2.38-.09.05-.13.11-.13.22v4.77c0 .1.03.16.12.21 1.37.79 2.74 1.57 4.1 2.37.13.08.22.07.35 0 1.36-.79 2.73-1.58 4.1-2.37.08-.05.11-.1.11-.2z" />
+                            </svg>
+                            </path>
+                            </svg>
+                        </a>
+                        <div class="tooltip">MaliksGPT</div>
+                    </li>
+                </ul>
+
+                <a href="index.html">Home</a>
+                <a href="index.html#competition">Ai Tools</a>
+                <a href="videos.html">Videos</a>
+                <a href="template.html">Templates</a>
+                <a href="team.html">Team</a>
+                <a href="index.html#contact">Contact us</a>
+            </div>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </article>
+
+    </header>
+    <aside class="mobileheader">
+        <article>
+            <button class="mobileheader-close">
+                <svg class="--svg-fill" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M512 0C229.232 0 0 229.232 0 512c0 282.784 229.232 512 512 512 282.784 0 512-229.216 512-512C1024 229.232 794.784 0 512 0m0 961.008c-247.024 0-448-201.984-448-449.01 0-247.024 200.976-448 448-448s448 200.977 448 448-200.976 449.01-448 449.01m181.008-630.016c-12.496-12.496-32.752-12.496-45.248 0L512 466.752l-135.76-135.76c-12.496-12.496-32.752-12.496-45.264 0-12.496 12.496-12.496 32.752 0 45.248L466.736 512l-135.76 135.76c-12.496 12.48-12.496 32.769 0 45.249 12.496 12.496 32.752 12.496 45.264 0L512 557.249l135.76 135.76c12.496 12.496 32.752 12.496 45.248 0 12.496-12.48 12.496-32.769 0-45.249L557.248 512l135.76-135.76c12.512-12.512 12.512-32.768 0-45.248" />
+                </svg>
+            </button>
+            <div class="mobileheader-logo">
+                <p>MaliksTraining</p><b>.io</b>
+            </div>
+            <div class="mobileheader-content">
+                <a href="index.html">Home</a>
+                <a href="index.html#competition">Ai Tools</a>
+                <a href="team.html">Team</a>
+                <a href="videos.html">Videos</a>
+                <a href="index.html#contact">Contact us</a>
+                <a href="template.html">Templates</a>
+                <a target="_blank" href="https://chatgpt.com/g/g-a0vm07JeH-maliks-gpt">Maliks GPT</a>
+            </div>
+        </article>
+    </aside>
+
+
+    <section class="template gd-page">
+        <article>
+            <div class="gd-page-search">
+
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M21.71 20.29 18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.39M11 18a7 7 0 1 1 7-7 7 7 0 0 1-7 7" />
+                </svg><input id="searchInput" type="text">
+
+            </div>
+
+            <p class="title-page">Template Gallery</p>
+
+            <div class="gd-page-body-videos-piece template-content">
+
+                <a href="https://drive.google.com/drive/folders/1Fd8Hnctxaxq0fW_R16a-hvF2auprqg6V?usp=drive_link" target="_blank" class="template-card"
+                data-title="photo effect photoshop">
+                    <img src="IMGS/Items/photo effect.jpg" alt="">
+                    <p>Photo Effects</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/1p3z3xpqaNTZXlZoMUDGtafI_zTls8ikR?usp=drive_link" target="_blank" class="template-card"
+                data-title="Greetings cards thank you card birthday engagment halloween Easter Family Father's Day First Communion General Graduation Halloween Marriage Mother's Day Teachers Valentine">
+                    <img src="IMGS/Items/greetings cards.jpg" alt="">
+                    <p>Greetings Cards | All Occasions</p>
+                    <b class="download">Download</b>
+                </a>
+
+
+                <a href="https://drive.google.com/drive/folders/1x4iavllEwCy9nzhnXtPnAAW1eblQlQjK?usp=drive_link" target="_blank" class="template-card"
+                data-title="fathers day father's day collection dad">
+                    <img src="IMGS/Items/fathers.png" alt="">
+                    <p>Fathers Day | Collection</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/1o1U3Y6YIi-xkwbLh8vnO5cgk8YeXeyy1?usp=drive_link" target="_blank" class="template-card"
+                data-title="laser frame wood collage ideas woud">
+                    <img src="IMGS/Items/wood laser.png" alt="">
+                    <p>Farme | Wood or HB Templates</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1NDPJxf4YgbqJ8XUw_ly4VzkFL3_49B36/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="Frames mom dad father mother frame hb collage">
+                    <img src="IMGS/Items/mom frame.jpg" alt="">
+                    <p>Mom | Dad | Farme</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/1MpcYJQsTLJZahqVR51q1lqI4gWMiKlUL?usp=drive_link" target="_blank" class="template-card"
+                data-title="christmas chrismas Christmas xmas collection bookmarks clock frame greetings cards">
+                    <img src="IMGS/Items/xmas.png" alt="">
+                    <p>Christmas Collection</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/1iZKQCBGEUPPtFKOI280DHHp89irwH25j?usp=drive_link" target="_blank" class="template-card"
+                data-title="back to school label sticker books kids child skool">
+                    <img src="IMGS/Items/books.jpg" alt="">
+                    <p>Label for Back to School</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1228o3MzS9xt2H9HqVmEwGq7VtF5QJG3A/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="plexi with led design 3d illusion">
+                    <img src="IMGS/Items/designs illusion.jpg" alt="">
+                    <p>Ready Led Design</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1T5wDMNQU2hbV_xB90H-Kac-xfDR0yYsK/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="Magic Box boxs magiq photos memories memory">
+                    <img src="IMGS/Items/magiv.jpg" alt="">
+                    <p>Magic Box</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1ZJcOkOdbwfDNZNjHU1-adQaGt67RKWV3/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="Keychain film template films roll">
+                    <img src="IMGS/Items/film.jpg" alt="">
+                    <p>Keychain Film Template</p>
+                    <b class="download">Download</b>
+                </a>
+
+
+                <a href="https://drive.google.com/file/d/1_g9WPPAKRD9JhsfEzgQn_uU-LYZnGFdp/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="Collection of Arabic Fonts | Firas Kheirddine">
+                    <img src="IMGS/Items/arabic fonts.gif" alt="">
+                    <p>Collection of Arabic Fonts | Firas Kheirddine</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/1xhD8yckzwjzYZP06VtF1GsKukkPNDkIg?usp=drive_link" target="_blank" class="template-card"
+                data-title="university logo logos assets">
+                    <img src="IMGS/Items/uni.png" alt="">
+                    <p>University Logos</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/1rb3DdbvcFvtcXRDmn-4MMT_JmFjk1NjP?usp=drive_link" target="_blank" class="template-card"
+                data-title="trophy trophies awards glass plexi engrave laser sublimation printon print on full color">
+                    <img src="IMGS/Items/sublimation print on.jpg" alt="">
+                    <p>Sublimation Trophies | All Shapes</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/1-NfYjxIRxARS2ls8OpSxGth_B1aJtqT2?usp=drive_link" target="_blank" class="template-card"
+                data-title="trophy trophies awards glass plexi engrave laser">
+                    <img src="IMGS/Items/Trophies.jpg" alt="">
+                    <p>Glass Trophies | All Shapes</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1oX4xlh8RKsEOdUTrF5a1o0Omg_YqChQR/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="Collage colage picassa template">
+                    <img src="IMGS/Items/collage.jpg" alt="">
+                    <p>Collage Templates</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1WPbznyZm1i0wTg85tD90qXmxUi20L26w/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="school bag pink scool skool schoul">
+                    <img src="IMGS/Items/school pink.jpg" alt="">
+                    <p>School Bad Pink</p>
+                    <b class="download">Download</b>
+                </a>
+                
+                <a href="https://drive.google.com/file/d/13N925-JpX83jmyuOSeF26eD6KjYznDj3/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="school bag blue black scool skool schoul">
+                    <img src="IMGS/Items/school blue.jpg" alt="">
+                    <p>School Bad Blue</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1qPAALB8ghsJwVdoK5Ll2UfHLVYjk5Z12/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="pencil case pencel">
+                    <img src="IMGS/Items/pencil.jpg" alt="">
+                    <p>Pencil Case</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/13gF4I7vE3biSBYrbj-r2K6tHQfvuMJQC?usp=drive_link" target="_blank" class="template-card"
+                data-title="rocky tiles rockytiles rock circle semi-circle semi square rectangle">
+                    <img src="IMGS/Items/rockytile.jpg" alt="">
+                    <p>Rockytile | All Shapes & Sizes</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/11N-zo7MgkeexcM786Uxr8SkQbQlMA7xj?usp=drive_link" target="_blank" class="template-card"
+                data-title="Puzzles laser puzzle a1 a2 a3 a4 frame sublimation">
+                    <img src="IMGS/Items/puzzle.jpg" alt="">
+                    <p>Puzzle | All Shapes & Sizes</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/11CeSgXD7qVETOr96xtKISF1BJQ4LeRpY/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="plate plat playt plait sahen ceramic full edge">
+                    <img src="IMGS/Items/plate.jpg" alt="">
+                    <p>Plate | Full Edge</p>
+                    <b class="download">Download</b>
+                </a>
+                
+
+                <a href="https://drive.google.com/file/d/1uzTl5hRoIfTTsTJLLpwBnE7BqC5d1wjh/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="desk desc sign name">
+                    <img src="IMGS/Items/desk.jpg" alt="">
+                    <p>Desk Sign</p>
+                    <b class="download">Download</b>
+                </a>
+                
+                <a href="https://drive.google.com/drive/folders/13JLAXBwUjDrkOOHIfuoG9mHtAdaO9kdS?usp=drive_link" target="_blank" class="template-card"
+                data-title="wood wooden woud box trophy trophi valvet">
+                    <img src="IMGS/Items/wooden.jpg" alt="">
+                    <p>Wooden Box | Trophy</p>
+                    <b class="download">Download</b>
+                </a>
+
+
+                <a href="https://drive.google.com/drive/folders/1KVMHtf08z8XpJXeqmRNyb62xoZv2hPu6?usp=drive_link" target="_blank" class="template-card"
+                data-title="velvet box trophy trophi valvet">
+                    <img src="IMGS/Items/velvet.jpg" alt="">
+                    <p>Velvet Box | Trophy</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1KtyjpozgXZ_QCI-GyvTRt6Pt62T74Zn8/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="badge metal with pin badges">
+                    <img src="IMGS/Items/badge metal pin.jpg" alt="">
+                    <p>Badge Metal With Pin</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1aeK4jW_6e7va1fgSCqFvrUb0q-Csqm3A/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="hb badge magnetic">
+                    <img src="IMGS/Items/hb magnet.jpg" alt="">
+                    <p>HB Badges | All Shapes</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1IOQUkyIuhjcdeFaMOHsF9TjvylZlPN8h/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="pins badges all sizes 5.5 7 3.5 2.5 cm">
+                    <img src="IMGS/Items/badge.jpg" alt="">
+                    <p>Plastic Badges | All Sizes</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/1ogRZZx2G1Cu5OA7LSbG9vRomn64ThoRy?usp=drive_link" target="_blank" class="template-card"
+                data-title="pillows heart square pilow">
+                    <img src="IMGS/Items/pillow a3.jpg" alt="">
+                    <p>Pillows</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/1eZTArIlRhmO2CFyqQGsKhr3Z17mszRSj?usp=drive_link" target="_blank" class="template-card"
+                data-title="sequin siquen sequen siquin pillow pillows pilow heart hart square sqare">
+                    <img src="IMGS/Items/sequin.jpg" alt="">
+                    <p>Sequin Pillows</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/13RzwDSewxRFqI-zigy7w8UWBcbpJtsoS/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="photo book photobook fotobook album albom">
+                    <img src="IMGS/Items/photobook.jpg" alt="">
+                    <p>Photobook</p>
+                    <b class="download">Download</b>
+                </a>
+                
+                <a href="https://drive.google.com/drive/folders/1Wu1q-GoX4IuUJuBz2x3GF1LwqSgiMmyw?usp=drive_link" target="_blank" class="template-card"
+                data-title="Phone covers iphone samsung huaei huwawi fone">
+                    <img src="IMGS/Items/Iphone Cover.jpg" alt="">
+                    <p>Covers | All Phones</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1BNlOA4MkbR57oj83AO_rXg0ouVB3bfZl/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="wood sublimation a4 woud sublimassion">
+                    <img src="IMGS/Items/wood sub.jpg" alt="">
+                    <p>Wood Sublimation</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1Y0Wgp15KXNaIY0KXc-7XEYwAorFAvElz/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="playin cards template playing carts wara2 shade">
+                    <img src="IMGS/Items/playin cards.jpg" alt="">
+                    <p>Playing Cards</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1uMRmgtAbO6M3CskAewb3BubVgcaRnbgA/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="magnetic plastic card magnatic">
+                    <img src="IMGS/Items/card mag.jpg" alt="">
+                    <p>Magnetic Plastic Card</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1N-fWMfnX3DXBWio2A2h-b421DNLwpIM7/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="phone ring holder rings">
+                    <img src="IMGS/Items/phone ring holder.jpg" alt="">
+                    <p>Phone Ring Holder</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1sLq1d4xpq2M_OXgcBcoPmVNt5lSD2XRl/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="neck tie nek gravat cravat nek ty">
+                    <img src="IMGS/Items/neck tie.png" alt="">
+                    <p>Neck Tie</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1HPmNkzvuTJQ78sZW-7jmqV105ycVa_U1/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="Moteur Motor labels vinyl template">
+                    <img src="IMGS/Items/Motor.png" alt="">
+                    <p>Motor Label | Design</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1WCVCIy4MhmW3xyJGeBYrPpI6UBWCbOQH/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="laguage lagage tag school bag tags laggage lagguage">
+                    <img src="IMGS/Items/laguage tag.jpg" alt="">
+                    <p>Luggage Tag</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1UQ16LaUZXFTLGVkdqkKXNIokiD_M12ac/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="music poster led plexi musik">
+                    <img src="IMGS/Items/music poster.jpg" alt="">
+                    <p>Music Poster | Design</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1X3RW-46FmL1UKKSg28ZsNCQhLSY2Yv5z/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="kitchen oven gloves">
+                    <img src="IMGS/Items/oven-glove.jpg" alt="">
+                    <p>Kitchen Oven Gloves</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1mNN0cNeXbA328Tp3UINPlyZPTV0DYo0_/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="glass lamp lampader lamb table">
+                    <img src="IMGS/Items/table lamp.jpg" alt="">
+                    <p>Table Lamp</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1-7jh0tgNfCrAei4wRtT7LireWAPspZoE/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="cross salib kross cros qross">
+                    <img src="IMGS/Items/cross.jpg" alt="">
+                    <p>Cross</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1MK8Vxq60m84PAK-UedlVhpJBYpD0ajNI/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="ceramic vase ceramik ceramique ceramice vasse">
+                    <img src="IMGS/Items/vase.jpg" alt="">
+                    <p>Ceramic Vase</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1JGg2ngrfRzfX43fwaor4HTFR_18HLgxK/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="CD DVD template">
+                    <img src="IMGS/Items/cd.jpg" alt="">
+                    <p>CD Sticker Template</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1-V6VpTMty7qufvF6se06qTpoG9OvIeQI/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="card holder cart">
+                    <img src="IMGS/Items/card holder.jpg" alt="">
+                    <p>Card Holder</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1GiJhVkMJm4JO7vQQR4BVepWgG4mC0rhB/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="cap hat caps">
+                    <img src="IMGS/Items/cap.jpg" alt="">
+                    <p>Cap | All Colors</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1HliCenBbxCrzXm7N4b_p7et83-aNniFa/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="Braceletes bracelet braclet bracelette fashion">
+                    <img src="IMGS/Items/fashion bracelete.jpg" alt="">
+                    <p>Fashion Braceletes</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1rLFx3bs6dMeCibD9NXT4UDxGVfjrCK6o/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="bag with rope rob">
+                    <img src="IMGS/Items/rope.jpg" alt="">
+                    <p>Bage With Rope</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1CgYyKGlMLy77WTx5E_9twQSnl_f2G9QQ/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="baby blanket blancet blankette">
+                    <img src="IMGS/Items/baby blanket.jpg" alt="">
+                    <p>Baby Blanket</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/194xXgv5piOuQU-KotPqI5uhv-JDTt5yV/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="ashtray smoke achtray">
+                    <img src="IMGS/Items/ashtray.jpg" alt="">
+                    <p>Ashtray</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/1TzqWAmmDVNfRZi1n8py_0m8_jgjNqLVz?usp=drive_link" target="_blank" class="template-card"
+                data-title="face mask masc masck corona">
+                    <img src="IMGS/Items/facemask.jpg" alt="">
+                    <p>Face Mask</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/1p8PRpfB-BpBKDbepce4ogh6fhUW0CbFQ?usp=drive_link" target="_blank" class="template-card"
+                data-title="envelopes enveloppe envelops">
+                    <img src="IMGS/Items/envelopes.jpg" alt="">
+                    <p>Envelopes</p>
+                    <b class="download">Download</b>
+                </a>
+
+
+                <a href="https://drive.google.com/file/d/1nR22ZeuJemEGO9YB4KX7rqZY6kH18Vbr/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="Wooden coaster coster wood square">
+                    <img src="IMGS/Items/wooden square coaster.jpg" alt="">
+                    <p>Wooden Square Coaster</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1ZDqLeRBtokcVQDKI6ExPKT1aLima1fV3/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="Wooden coaster coster wood circle">
+                    <img src="IMGS/Items/circle coaster wood.jpg" alt="">
+                    <p>Wooden Circle Coaster</p>
+                    <b class="download">Download</b>
+                </a>
+
+
+                <a href="https://drive.google.com/file/d/1Hjctky4DAd7tL08yOR7zZ_Pzd_iv_4Bo/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="shopping bag shoping baj beige">
+                    <img src="IMGS/Items/shopping bag.jpg" alt="">
+                    <p>Shopping Bag Beige</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1S0kVpZMrf4unh8HBuIFvDahzfzNUr7FB/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="shell necklace neklase neklace neclace neclase">
+                    <img src="IMGS/Items/Shell Neckless round.jpg" alt="">
+                    <p>Shell Necklace | All Shapes</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1v80QY-MgflfMKrEcDhQ-sCp5J_aVY9bn/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="metal wine cup wayne wain">
+                    <img src="IMGS/Items/Stemless Wine cup  White.jpg" alt="">
+                    <p>Metal Wine Cup</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1wiDRRP4vTP2b582DArbmPMSHyn-ljZTe/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="metal christmas ornament star xmas chrismas">
+                    <img src="IMGS/Items/metal christmas ornament.jpg" alt="">
+                    <p>Metal Christmas Ornament</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1GacNUkQez4LBYZ8CNq-DHGQDbxHTptfA/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="metal braceletes bracelt braclets">
+                    <img src="IMGS/Items/metal bracelet.jpg" alt="">
+                    <p>Metal Bracelets</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1_RIY5gFpfJHQCiKOwAeCXLayco3xI5py/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="metal bottle cola bottle mettal">
+                    <img src="IMGS/Items/metal bottle.jpg" alt="">
+                    <p>Cola Bottle</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/10yqDMyAnO3CYjAhzI2ytP_hMQDBqv1jL/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="car pillow kar qar sayara siyara pilow pillows pilows">
+                    <img src="IMGS/Items/car pillow.jpg" alt="">
+                    <p>Car Pillow</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1i5l_xLMTJ7AcG6TkZiCg669RfTW6XiGq/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="Bottle Openner opner">
+                    <img src="IMGS/Items/bottle opener.jpg" alt="">
+                    <p>Bottle Opener</p>
+                    <b class="download">Download</b>
+                </a>
+                
+                <a href="https://drive.google.com/file/d/1TW3K_LFxdQAAoptk16aY5_qtaeQh1GGp/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="baby babie bib bavette bavvete bavvette bavete kids kid">
+                    <img src="IMGS/Items/Baby Bib.jpg" alt="">
+                    <p>Baby Bib | Bavette</p>
+                    <b class="download">Download</b>
+                </a>
+
+
+                <a href="https://drive.google.com/drive/folders/16ZlOVI95cTxCnIRFL9wgszAbwoD-Uy6d?usp=drive_link" target="_blank" class="template-card"
+                data-title="Apron Adult kids">
+                    <img src="IMGS/Items/Apron.jpg" alt="">
+                    <p>Apron | All sizes</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/13TVrJUgVsk20qBYepR7uNk7ZKYxr2UTi?usp=drive_link" target="_blank" class="template-card"
+                data-title="wood hanging hanger woud">
+                    <img src="IMGS/Items/wood.jpg" alt="">
+                    <p>Wood Hanger | All sizes</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/1S_du3eSqRaVqQtLjR3-e5mZj41g6qZXy?usp=drive_link" target="_blank" class="template-card"
+                data-title="towel tawel manshafe large and big">
+                    <img src="IMGS/Items/towel.jpg" alt="">
+                    <p>Towel | All sizes</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/16av8DXiVzA6rgYe0je5-fp_G_DElLMFn?usp=drive_link" target="_blank" class="template-card"
+                data-title="black rockytile rocky tile slate blak dark">
+                    <img src="IMGS/Items/br.jpg" alt="">
+                    <p>Black Rockytile | All Shapes</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1cBQsbIQYgO851pWosvTFnD7aUBqmISp2/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="tumbler frosted mug tambler tombler">
+                    <img src="IMGS/Items/tumbler.jpg" alt="">
+                    <p>Tumbler Frosted</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1RKg-UbXhgbIXBlEDjUmuPap-zk7R27S0/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="Two tone mug large mug big mug">
+                    <img src="IMGS/Items/largemyg.jpg" alt="">
+                    <p>Big Mug</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1O5oLNF7OHh-fTTxSTWfzOWJ6rEHRhqTb/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="Enamal mug metal cup mug camping">
+                    <img src="IMGS/Items/camp mug.jpg" alt="">
+                    <p>Enamal Mug</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1n0geU46_xAtll-ZEGS_V2Cpkj0aRPnu6/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="dog faraa tag dogtag">
+                    <img src="IMGS/Items/Dog Tag.jpg" alt="">
+                    <p>Dog Tag</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1qaPBnH8Ru8hRgnzrNG98uzOVx-KBnhlM/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="dog scarf faraa scarf kaleb kalb cat shell shall ya kaleb skarf sqarf scarv small meduim">
+                    <img src="IMGS/Items/scarf S.jpg" alt="">
+                    <p>Dog Scarf Small</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1FFcZThJ2sI2Oq-UfSiGxSb6G_TGX94kX/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="dog scarf faraa scarf kaleb kalb cat shell shall ya kaleb skarf sqarf scarv large big">
+                    <img src="IMGS/Items/scarf S.jpg" alt="">
+                    <p>Dog Scarf Large</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1oLnFZmmNPI50f_QO4IKujbvepL-mIycb/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="sport water bottle large watar botle big">
+                    <img src="IMGS/Items/water L.jpg" alt="">
+                    <p>Water Botlle Large</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1zvoXCUXlw2qThpN64KhMvaTlKtzCNNMA/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="Two Tone spoon mug colored inside two tone">
+                    <img src="IMGS/Items/spoon.jpg" alt="">
+                    <p>Mug Spoon</p>
+                    <b class="download">Download</b>
+                </a>
+
+
+                <a href="https://drive.google.com/file/d/1uh8ktUODzg-yAGVfSurnV6bOB9n9f0Rm/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="tea cup nescafe coffee cofe caffe cafe cofee cofe bean shay mug">
+                    <img src="IMGS/Items/Coffee.jpg" alt="">
+                    <p>Coffee Cup</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1K3igG8Qnc--EkW3lfeljKK-IDaC-kJUh/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="sport water bottle white small 400 ml 400ml">
+                    <img src="IMGS/Items/sport bottle small.jpg" alt="">
+                    <p>Sport Water Bottle 400ml</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1bugEBVK1prMx0mh7CRFRfbFo2nb5OqYf/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="shot shots shat">
+                    <img src="IMGS/Items/shot.jpg" alt="">
+                    <p>Shots</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1CKl9um0vYnoELm5ddfn0uuAgSYwb9WfY/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="Thermos white Mug termos tarmos">
+                    <img src="IMGS/Items/thermos.jpg" alt="">
+                    <p>Thermos White</p>
+                    <b class="download">Download</b>
+                </a>
+                
+                <a href="https://drive.google.com/file/d/1F318ryOCDYdSRoG1lo6TTJMa0PgyBTYR/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="white mug normal white heart patch hart batch blanc">
+                    <img src="IMGS/Items/heart patch.jpg" alt="">
+                    <p>White Mug | Heart Patch</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1u9disKtSM3feMr6DEh5sHJrkoUUBsE-H/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="white mug normal blanc standard">
+                    <img src="IMGS/Items/whitemug.jpg" alt="">
+                    <p>White Mug</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1CKm4aHS5guC_nDxUZUqYjrdkHeoFLV9f/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="mason jar masom gar">
+                    <img src="IMGS/Items/masonjar.jpg" alt="">
+                    <p>Mason Jar</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1BzpGlL5sQrub2J2HwOewG8HIyaGRJWhU/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="lovers mugs two heart">
+                    <img src="IMGS/Items/lovers mug.jpg" alt="">
+                    <p>Lovers Mugs</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1iaFJcIJHyh5fcUyJgsIN5bNfQvVQqmED/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="latte late lateh latteh mug small meduim">
+                    <img src="IMGS/Items/latte Small.jpg" alt="">
+                    <p>Latte Mug Small</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1vhGb7ArOS7L30p9kjwqNkkP50l06OKTS/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="latte late lateh latteh mug big large">
+                    <img src="IMGS/Items/latte Big.jpg" alt="">
+                    <p>Latte Mug Large</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1xvjjEormkEMoGApTon0BRbZi9Uhsmq_Z/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="Ceramic tumbler tombler tambler seramic">
+                    <img src="IMGS/Items/ceramic tumbler.jpg" alt="">
+                    <p>Ceramic Tumbler</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1U1i11gcOvOMiG4fqU2KOQIvf89P-hMhj/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="car mug carmug kar thermos">
+                    <img src="IMGS/Items/carmug.jpg" alt="">
+                    <p>Car Mug</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1xEGvs7hvrWTFSzMKN7EQexll4Va1Ku4j/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="black mug whith white patch batch aswad blak small meduim">
+                    <img src="IMGS/Items/patch L.jpg" alt="">
+                    <p>Black Mug | White Patch Small</p>
+                    <b class="download">Download</b>
+                </a>
+                                                
+                <a href="https://drive.google.com/file/d/10LXNV0BO-MrCmxtsA8xpfYeN-ndkh31R/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="black mug whith white patch batch aswad blak large big">
+                    <img src="IMGS/Items/patch L.jpg" alt="">
+                    <p>Black Mug | White Patch Large</p>
+                    <b class="download">Download</b>
+                </a>
+                                
+                <a href="https://drive.google.com/file/d/1cRUpofFm49holrl40Sgr_sEF9rE-i69W/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="beer mug bir byr almaza bira beera">
+                    <img src="IMGS/Items/beer mug.jpg" alt="">
+                    <p>Frosted Beer Mug</p>
+                    <b class="download">Download</b>
+                </a>
+                
+                <a href="https://drive.google.com/file/d/1kbYjkRNvKXnhSpdxUaI6m6kEAm7A3BWm/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="animal mug faraa snake dolphin cat snacke snaqe kat ">
+                    <img src="IMGS/Items/faraa mug.jpg" alt="">
+                    <p>Animal Mug</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/1uobPFNzg7usfBz9Yj47Adu_HWdCaMSBU?usp=drive_link" target="_blank" class="template-card"
+                data-title="mouse pad mose muse pad bad padd ">
+                    <img src="IMGS/Items/Mouse pads.jpg" alt="">
+                    <p>Mouse Pad (All Shapes)</p>
+                    <b class="download">Download</b>
+                </a>
+                     
+
+                <a href="https://drive.google.com/drive/folders/1xxxZSJjGTJ8vrz-IGZHVggkigjBzUKWV?usp=drive_link" target="_blank" class="template-card"
+                data-title="keychain nomret sayyara license plate car plate kar siyara siyyara sayara">
+                    <img src="IMGS/Items/car plate.jpg" alt="">
+                    <p>Licnese Car Plate</p>
+                    <b class="download">Download</b>
+                </a>
+                                
+                <a href="https://drive.google.com/file/d/1oGRvmzg-RVzHTfOpwE-jxC3OQBazwh4u/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="keychain i love you heart hart">
+                    <img src="IMGS/Items/love kch.jpg" alt="">
+                    <p>Keychain I Love you</p>
+                    <b class="download">Download</b>
+                </a>
+                
+                <a href="https://drive.google.com/file/d/138JXPk4GMxOZgRAycVeTBbXKX7LKH8b6/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="keychain t-shirt tshirt shirt kanze jersey hb sublimation wood">
+                    <img src="IMGS/Items/shirt hb.jpg" alt="">
+                    <p>Keychain T-shirt HB</p>
+                    <b class="download">Download</b>
+                </a>
+
+
+                <a href="https://drive.google.com/file/d/1WLKP3YztVSQTa17OH72pir1YpwyHBvmm/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="keychain heart hb hart sublimation wood">
+                    <img src="IMGS/Items/heart hb.jpg" alt="">
+                    <p>Keychain Heart HB</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1N_E_qDge-zLag03rIHf7v4_gz0O9ugbL/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="keychain rectangle hb wood sublimation">
+                    <img src="IMGS/Items/HB Rectangle.jpg" alt="">
+                    <p>Keychain Rectangle HB</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/13em6Mtw3HeOyFidD7S2ucTYDLi195LEO?usp=drive_link" target="_blank" class="template-card"
+                data-title="glass frame luman transparent glasses frames">
+                    <img src="IMGS/Items/all Glass frames.jpg" alt="">
+                    <p>Glass Frames (All)</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/1wzFSZYFSRs6nqIGdrLPSO8RxU8_PXZ8A?usp=drive_link" target="_blank" class="template-card"
+                data-title="fridge magnet">
+                    <img src="IMGS/Items/fridge magnet.jpg" alt="">
+                    <p>Fridge Magnet</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/1ox9dCTH_RQc1cW06h79S_gS9mU9Qr38Z?usp=drive_link" target="_blank" class="template-card"
+                data-title="flipflop slipper sliper black green orange">
+                    <img src="IMGS/Items/Flipflop.jpg" alt="">
+                    <p>FlipFlop</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/12AfUViDRLOZAeH7mQ1-j1GOgFOUuCZLC?usp=drive_link" target="_blank" class="template-card"
+                data-title="facotry popup pop up display">
+                    <img src="IMGS/Items/Popup.jpg" alt="">
+                    <p>Popup Display - Factory</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/1WOzlXnxQX3yPKDwmOthXScGH-CLi-YOP?usp=drive_link" target="_blank" class="template-card"
+                data-title="doodle kids drawing painting coloring">
+                    <img src="IMGS/Items/Doddle.png" alt="">
+                    <p>Doodle</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1TrlORX7p3LyP508ClZmf4o3dRWtalsR5/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="Coaster Rubber Round coster">
+                    <img src="IMGS/Items/Coaster Rubber Round.jpg" alt="">
+                    <p>Coaster Rubber Round</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1P3eoDpjQnbzEuyp4HYFZhXHWjIsflSYx/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="Coaster Rubber Square coster">
+                    <img src="IMGS/Items/Coaster Rubber Square.jpg" alt="">
+                    <p>Coaster Rubber Square</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1cMuDLTLHI0cNskpBrOFVFXePrxFcHpNQ/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="Coaster Glass Square transparent coster">
+                    <img src="IMGS/Items/Coaster Glass Square.jpg" alt="">
+                    <p>Coaster Glass Square</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1IE8wXAx2ls4usFa0T7dqTaFyY2pT7cjN/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="coaster round glass transparent coster">
+                    <img src="IMGS/Items/Glass round.jpg" alt="">
+                    <p>Coaster Glass Round</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1L1wDKQfS5Z3z5wUvysadD5boV03TW-cV/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="coaster corck cork wood round coster">
+                    <img src="IMGS/Items/Coaster Cork Round.jpg" alt="">
+                    <p>Coaster Cork Round</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1LlIuLbjHVQXuF-_QoEguRwbBsVq87Fxw/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="Coaster corck square wook coster">
+                    <img src="IMGS/Items/Coaster Cork Square.jpg" alt="">
+                    <p>Coaster Cork Square</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1w4G6wy0nA8s52G2aJvrhHFhcjBOUz_WC/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="Cigarette case smoke large">
+                    <img src="IMGS/Items/Cigarette Case Large.jpg" alt="">
+                    <p>Cigarette Case Large</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1RiRROKK1tUC6Cs3YlUZ1_hRgw4iJXjR9/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="Cigarette case small smoke">
+                    <img src="IMGS/Items/Cigarette Case Small.jpg" alt="">
+                    <p>Cigarette Case Small</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1Xmr1gy5YEhAaybDuoWx3dQu_GY7ZuMYL/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="xmas christmas ornament star transparent metal insert">
+                    <img src="IMGS/Items/star ornament.jpg" alt="">
+                    <p>Star Ornament</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1FM57BM4QaqZiO33ftB9qJSMqDlrk8uKX/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="christmas ball ornament transparent metal insert xmas">
+                    <img src="IMGS/Items/Ball ornaments trans.jpg" alt="">
+                    <p>Ball Christmas Ornament transparent</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1HzrTS_6wQfMA4geVDYlUeeMVhiDCjkiu/view?usp=drive_link" target="_blank" class="template-card"
+                data-title="christmas ornament ball balls red blue green purple mauve metal insert xmas">
+                    <img src="IMGS/Items/Ball Christmas Ornament.png" alt="">
+                    <p>Ball Christmas Ornament</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1jgbw5JgxKSQOU1m86HIXad3itzw_zCLa/view?usp=drive_link" target="_blank" class="template-card" data-title="tile ceramic tiles tile tyle wood tile 1010 10x10 10cmx10cn 1515 15x15 15cmx15xm 2020 20x20 20cmx20cn">
+                    <img src="IMGS/Items/Ceramic tiles.jpg" alt="">
+                    <p>Ceramic Tiles</p>
+                    <b class="download">Download</b>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/1nkcVrIs5EFF_wRcJbQP493oARICSqF40?usp=sharing" target="_blank" class="template-card" data-title="balloons baloons balouns balloun baluns balluns ">
+                    <img src="IMGS/Items/Balloons.jpg" alt="">
+                    <p>Balloons</p>
+                    <b class="download">Download</b>
+                </a>
+
+
+
+            </div>
+
+            
+        </article>
+    </section>
+
+
+    <footer><a href="https://shadifarhat.github.io/" target="_blank">Developed and Designed by Shadi Farhat - Services
+            Department - © 2024</a></footer>
+
+
+</body>
+
+
+<script src="script.js"></script>
+
+
+</html>

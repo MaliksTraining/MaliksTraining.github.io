@@ -345,7 +345,7 @@ if (searchInput) {
       const allWordsPresent = searchValue.every(word => title.includes(word));
 
       if (allWordsPresent) {
-        image.style.display = 'block'; // Show the image
+        image.style.display = 'flex'; // Show the image
       } else {
         image.style.display = 'none'; // Hide the image
       }
@@ -508,3 +508,4 @@ if (fadeCount) {
     appearScroll.observe(element);
   });
 }
+
